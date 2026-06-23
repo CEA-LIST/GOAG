@@ -1,0 +1,54 @@
+define: &device 'cuda'
+define: &robot_name 'allegro'
+# define: &robot_name 'shadowhand'
+# define: &robot_name 'barrett'
+define: &num_workers 0
+define: &batch_size 128
+
+define: &normalize_joint_values True
+
+# CVAE
+cvae:
+
+  robot_name: *robot_name
+
+  device: *device
+  batch_size: *batch_size
+  num_workers: *num_workers
+  n_epochs: 100
+  learning_rate: 1e-4
+
+  normalize_joint_values: *normalize_joint_values
+
+  # BETA (KLD Loss)
+  beta_fixed: 0.01
+
+  beta_range: [1e-8, 1e-4]
+  beta_cycle_start: 50
+  beta_cycle_length: 50
+  sigmoid_scale: 10.0
+  is_cyclique: False
+
+  # MODEL
+  latent_size: 128
+
+  # Encoder
+  layers_size: [2, 128, 256, 512]
+
+  # Decoder
+  in_dim: 8192
+  out_dim: 8192
+
+
+# POINTNET LABELS
+pointnet:
+
+  robot_name: *robot_name
+
+  device: *device
+  batch_size: *batch_size
+  num_workers: *num_workers
+  n_epochs: 50
+  learning_rate: 1e-4
+
+  normalize_joint_values: *normalize_joint_values

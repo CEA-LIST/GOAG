@@ -1,0 +1,13 @@
+device: 'cuda'
+
+distance_type: 'euclidean'
+# distance_type: 'aligned'
+
+learning_rate: 0.02
+
+max_iterations: 150
+
+W_PENETRATION: 50
+W_SELF_PENETRATION: 0.1
+W_JOINTS: 1
+
