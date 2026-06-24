@@ -7,7 +7,7 @@
 #### <sup>1</sup>Université Paris-Saclay, CEA-List &nbsp;&nbsp; <sup>2</sup>École Centrale de Lyon, CNRS, LIRIS, UMR5205, Institut Universitaire de France (IUF)
 #### 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
 
-### [**Project Page**](https://cea-list.github.io/goagweb/) &nbsp;&nbsp;|&nbsp;&nbsp; [**arXiv**](https://arxiv.org/abs/arxiv_paper_id) &nbsp;&nbsp;|&nbsp;&nbsp; [**PDF**](https://cea-list.github.io/goagweb/static/pdfs/postprint_GOAG__Generative_and_Object_Agnostic_Grasp_Planner_for_Dexterous_Robotic_Manipulation.pdf) &nbsp;&nbsp;|&nbsp;&nbsp; [**BibTeX**](#-citation--contact)
+### [**Project Page**](https://cea-list.github.io/goagweb/) &nbsp;&nbsp;|&nbsp;&nbsp; [**arXiv**](https://arxiv.org/abs/arxiv_paper_id) &nbsp;&nbsp;|&nbsp;&nbsp; [**BibTeX**](#-citation--contact)
 </div>
 
 <div align="center" style="background-color: white; padding: 2px;">
