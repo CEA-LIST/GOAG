@@ -70,20 +70,20 @@ If you plan to physically validate the synthesized grasps in simulation, you mus
 ### 1. Download Data and Models
 Start by downloading the necessary data and pre-trained model checkpoints.
 
-- **Datasets & Objects:** Download the [compressed file]() containing all gripper and object data. 
+- **Datasets & Objects:** Download the file [GOAG_DATA](https://github.com/CEA-LIST/GOAG/releases/tag/v1.0) containing all gripper and object data. 
     - Available Datasets: `dexgrab`, `realdex`, `dexgraspnet`, `unidexgrasp`, `multidex`
     - Supported Grippers: `barrett`, `allegro`, `shadowhand`
 
-- **Model Checkpoints:** Download the pre-trained weights for the [Shadow Hand](), [Allegro Hand]() and [Barrett]().
+- **Model Checkpoints:** Download the pre-trained [weights](https://github.com/CEA-LIST/GOAG/releases/tag/v1.0) for the Shadow Hand, Allegro Hand and Barrett.
 
 ### 2. Organize Directories
 
-Extract the downloaded files. Your directory tree should strictly follow this structure:
+Extract the files `ckpts.zip` and `GOAG_DATA.zip`. Your directory tree should strictly follow this structure:
 ```bash
 # Model Checkpoints
-GOAG
+GOAG                        # Main folder
 ├── ...
-├── logs
+├── logs                    # ckpts folder
     ├── allegro_cvae
     ├── allegro_pointnet
     ├── barrett_cvae
@@ -96,22 +96,22 @@ GOAG
 GOAG_DATA
 ├── handprints
 ├── pointclouds
-│   ├── dexgrab
-│   ├── dexgraspnet
-│   ├── multidex
-│   ├── realdex
-│   └── unidexgrasp
+    ├── dexgrab
+    ├── dexgraspnet
+    ├── multidex
+    ├── realdex
+    └── unidexgrasp
 ├── urdf
-│   ├── objects
-│   │   ├── dexgrab
-│   │   ├── dexgraspnet
-│   │   ├── multidex
-│   │   ├── realdex
-│   │   └── unidexgrasp
-│   └── robot
-│       ├── allegro
-│       ├── barrett
-│       └── shadowhand
+    ├── objects
+    │   ├── dexgrab
+    │   ├── dexgraspnet
+    │   ├── multidex
+    │   ├── realdex
+    │   └── unidexgrasp
+    └── robot
+        ├── allegro
+        ├── barrett
+        └── shadowhand
 └── workspaces
 ```
 
